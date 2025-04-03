@@ -1,0 +1,677 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background: linear-gradient(90deg, rgb(57, 57, 124), #140c31); /* Gradient background for a sleek look */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and nav to the right */
+    align-items: center;
+    padding: 15px 30px; /* Adds space around header content */
+    position: sticky; /* Keeps the header fixed at the top during scroll */
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+/* Style the logo */
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Larger font for better emphasis */
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Arial', sans-serif; /* Modern font choice */
+    letter-spacing: 1.5px; /* Adds spacing between letters */
+}
+
+/* Style the navigation menu */
+nav ul {
+    display: flex; /* Align navigation items horizontally */
+    justify-content: center; /* Centers navigation items */
+    list-style: none; /* Removes bullet points */
+    margin: 0; /* Resets margin */
+    padding: 0; /* Removes padding */
+}
+
+/* Style individual navigation items */
+nav ul li {
+    margin: 0 15px; /* Horizontal spacing between navigation items */
+}
+
+/* Style navigation links */
+nav ul li a {
+    color: #fff; /* White text color for links */
+    font-weight: bold;
+    text-decoration: none; /* Removes underline from links */
+    font-size: 1rem; /* Ensures readable font size */
+    padding: 8px 15px; /* Adds padding for clickable area */
+    border-radius: 30px; /* Circular corners for links */
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.4); /* Slightly brighter hover background effect */
+    transform: scale(1.1); /* Scales link on hover */
+}
+
+/* Media Query: Responsive Navigation */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap; /* Allows wrapping for smaller screens */
+        justify-content: center;
+        padding: 10px; /* Adjust padding for small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks navigation items vertically */
+        align-items: center; /* Aligns items in the center */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing for stacked items */
+    }
+}
+
+
+/* Typing Effect Section */
+#typing-effect {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+    color: rgb(57, 57, 124);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main Text Typing Effect */
+#typed-text {
+    font-size: 2rem;
+    font-weight: bold;
+    border-right: 2px solid rgb(57, 57, 124); /* Blinking cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Sub Text */
+#sub-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+/* About Section */
+#about {
+    display: flex; /* Align icon, text, and image horizontally */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Space between items */
+    padding: 40px 20px; /* Adds spacing */
+    background: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Text color */
+}
+
+/* About Icon Styling */
+.about-icon img {
+    width: 50px; /* Adjust the size of the icon */
+    margin-right: 10px; /* Adds spacing between the icon and text */
+}
+
+/* About Content Styling */
+.about-content {
+    display: flex;
+    align-items: center; /* Centers icon, text, and image vertically */
+    justify-content: space-between; /* Aligns content within the section */
+    flex: 1; /* Ensures content takes equal space */
+}
+
+.about-text {
+    flex: 2; /* About text takes more space */
+    text-align: left;
+}
+
+.about-image {
+    flex: 1; /* Image takes less space */
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%; /* Makes image responsive */
+    max-width: 300px; /* Caps image width */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+/* About Buttons */
+.about-buttons {
+    margin-top: 20px; /* Space above the buttons */
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 15px; /* Space between the buttons */
+}
+
+/* LinkedIn and GitHub Buttons */
+.about-buttons .btn {
+    display: inline-block;
+    text-decoration: none; /* Removes underline */
+    background: rgb(57, 57, 124); /* Button color */
+    color: white;
+    padding: 10px 15px; /* Button size */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.about-buttons .btn:hover {
+    background: #140c31; /* Darker color on hover */
+}
+
+
+/* Introduction Section */
+#introduction {
+    text-align: center; /* Centers text */
+    padding: 40px 20px; /* Adds spacing above and below */
+    background: #f4f4f4; /* Light background */
+    color: rgb(57, 57, 124); /* Matches theme color */
+}
+
+#introduction h1 {
+    font-size: 2.5rem; /* Larger font for headline */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the headline */
+}
+
+#introduction p {
+    font-size: 1.5rem; /* Slightly smaller font for sub-text */
+    font-weight: 500;
+    color: #333; /* Darker text for sub-heading */
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Layout for Content */
+.about-content {
+    display: flex; /* Creates side-by-side layout */
+    align-items: center; /* Vertically aligns text and image */
+    justify-content: space-between; /* Adds spacing between text and image */
+    gap: 20px; /* Adds space between the two elements */
+}
+
+/* Text Styling */
+.about-text {
+    flex: 1; /* Text takes equal space */
+    text-align: left; /* Aligns text to the left */
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Image Styling */
+.about-image {
+    flex: 1; /* Image takes equal space */
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+}
+
+.about-image img {
+    width: 100%; /* Makes image responsive */
+    max-width: 300px; /* Caps image width */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+/* Style for About Section Buttons */
+.about-buttons {
+    margin-top: 20px;
+    text-align: center; /* Center-aligns the buttons */
+}
+
+.about-buttons button {
+    background: rgb(57, 57, 124); /* Matches header color */
+    color: #fff; /* White text */
+    border: none; /* Removes default button borders */
+    padding: 10px 20px; /* Adds spacing inside buttons */
+    font-size: 16px; /* Makes buttons text readable */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0 10px; /* Adds spacing between buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.about-buttons button:hover {
+    background-color: #140c31; /* Slightly darker hover effect */
+    transform: scale(1.1); /* Grows the button slightly on hover */
+}
+
+/* Style for Button Links */
+.about-buttons button a {
+    text-decoration: none; /* Removes underline from button text */
+    color: #fff; /* Ensures text color matches the button */
+    font-weight: bold; /* Emphasizes button text */
+}
+
+/* Education Section */
+#education {
+    padding: 40px 0; /* Vertical spacing */
+    background: #f4f4f4; /* Light background for contrast */
+}
+
+.education-box {
+    width: 90%; /* Makes the box almost full-width */
+    max-width: 1200px; /* Caps the box width */
+    margin: 0 auto; /* Centers the box horizontally */
+    background: white;
+    border: 1px solid #ddd; /* Subtle border around the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px 30px; /* Internal spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: center;
+}
+
+/* Education Icon */
+.education-box img {
+    width: 50px; /* Scales the icon */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Section Title */
+.education-box h2 {
+    font-size: 1.8rem;
+    color: rgb(57, 57, 124); /* Matches theme color */
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.education-box p {
+    font-size: 1.2rem;
+    color: #333; /* Darker color for readability */
+    margin-bottom: 20px;
+}
+
+/* Download CV Button */
+.cv-btn {
+    background: rgb(57, 57, 124); /* Button color */
+    border: none;
+    padding: 10px 20px; /* Button spacing */
+    border-radius: 5px;
+    text-transform: uppercase; /* Makes text all caps */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+.cv-btn a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* White text for button */
+    font-weight: bold;
+}
+
+.cv-btn:hover {
+    background: #140c31; /* Darker shade for hover effect */
+}
+
+
+/* Skills Section */
+#skills {
+    padding: 100px 20px; /* Increased padding at the top to prevent overlap */
+    text-align: center;
+    background: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Text color */
+    position: relative; /* Ensures stacking context */
+    z-index: 1; /* Keeps the section below the header */
+}
+
+/* Skills Header */
+#skills h2 {
+    margin-bottom: 50px; /* Extra space below the header */
+    font-size: 2rem; /* Adjusted font size for visibility */
+    position: relative; /* Ensures stacking context for header */
+    z-index: 2; /* Keeps the header above skills rectangles */
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex; /* Aligns skills boxes horizontally */
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    justify-content: center; /* Centers skills boxes */
+    gap: 30px; /* Space between boxes for clarity */
+    position: relative; /* Ensures stacking context */
+}
+
+/* Individual Skills Box */
+.skills-box {
+    background: white;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners for modern look */
+    padding: 20px;
+    width: 260px; /* Adjusted width for uniformity */
+    height: auto; /* Automatically adjusts to content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    overflow: hidden; /* Prevents content overflow */
+    position: relative; /* Ensures hover effects are contained */
+    z-index: 0; /* Keeps hover effects under the header */
+}
+
+/* Hover Effect for Skills Box */
+.skills-box:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow effect on hover */
+    z-index: 1; /* Ensures hover stays below the header */
+}
+
+/* Icons Styling */
+.skills-box img {
+    width: 60px; /* Uniform icon size */
+    height: 60px; /* Ensures proportional sizing */
+    margin-bottom: 15px; /* Space below the icon */
+}
+
+/* Skills Title */
+.skills-box h3 {
+    font-size: 1.4rem; /* Adjusted size for text fitting */
+    margin-bottom: 15px; /* Adds space below the title */
+    color: rgb(57, 57, 124); /* Matches theme color */
+}
+
+/* Skills Description */
+.skills-box p {
+    font-size: 1rem;
+    color: #666; /* Softer text color */
+    margin-bottom: 10px; /* Adds space below each skill description */
+    line-height: 1.5; /* Improves readability */
+}
+
+
+/* Interests Section */
+#interests {
+    padding: 40px 0; /* Adds vertical spacing */
+    background: #fff; /* White background for contrast */
+}
+
+.interests-box {
+    width: 90%; /* Makes the box almost full-width */
+    max-width: 1200px; /* Caps the box width */
+    margin: 0 auto; /* Centers the box horizontally */
+    background: #f4f4f4; /* Light gray background */
+    border: 1px solid #ddd; /* Subtle border for definition */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px 30px; /* Internal spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+    text-align: center;
+}
+
+/* Interests Icon */
+.interests-box img {
+    width: 50px; /* Scales the icon */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Section Title */
+.interests-box h2 {
+    font-size: 1.8rem;
+    color: rgb(57, 57, 124); /* Theme color */
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.interests-box p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Enhances readability */
+    color: #333; /* Darker text for clarity */
+}
+
+
+
+/* Contact Form Container */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: #f9f9f9; /* Light background */
+}
+
+/* Contact Form */
+#contact-form {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Contact Icon */
+.contact-icon img {
+    width: 50px; /* Adjust size of the icon */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Form Heading */
+#contact-form h2 {
+    margin-bottom: 20px;
+    color: rgb(57, 57, 124); /* Matches theme color */
+}
+
+/* Input Fields */
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    height: 100px; /* Adjust height for textarea */
+}
+
+/* Submit Button */
+#contact-form button {
+    background: rgb(57, 57, 124); /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #140c31; /* Darker shade on hover */
+}
+
+#formFeedback {
+    margin-top: 15px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px; /* Increased padding at the top for spacing */
+    text-align: center;
+    background: #f4f4f4; /* Light background for contrast */
+    color: #333;
+    position: relative; /* Creates stacking context for header */
+    z-index: 2; /* Ensures the section stays above scaled project boxes */
+}
+
+/* Projects Header */
+#projects h2 {
+    margin-bottom: 40px; /* Adds space below the header */
+    font-size: 2rem; /* Larger font for header visibility */
+}
+
+/* Project Container */
+.project-container {
+    display: flex; /* Aligns project boxes horizontally */
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    justify-content: center; /* Centers project boxes */
+    gap: 20px; /* Space between boxes */
+}
+
+/* Individual Project Box */
+.project-box {
+    background: white;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 300px; /* Fixed width for uniform sizing */
+    height: auto; /* Let height adjust automatically to fit content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+    text-align: left; /* Aligns text inside the box */
+    overflow: hidden; /* Prevents content from overflowing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+    position: relative; /* Keeps hover effects contained */
+}
+
+.project-box:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Project Image */
+.project-box img {
+    width: 100%; /* Ensures images fit the box width */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures proper cropping of images */
+    border-radius: 10px; /* Matches the box corners */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Project Title */
+.project-box h3 {
+    font-size: 1.3rem; /* Slightly smaller size for fitting text */
+    margin-bottom: 10px; /* Adds spacing below the title */
+    color: rgb(57, 57, 124); /* Matches theme color */
+    text-align: center; /* Centers the title */
+}
+
+/* Project Description */
+.project-box p {
+    font-size: 0.95rem; /* Adjusted size for readability */
+    color: #666; /* Softer text color */
+    margin-bottom: 15px; /* Adds spacing below the description */
+    line-height: 1.5; /* Improves text readability */
+    text-align: left; /* Aligns text inside the box */
+}
+
+/* Project Button */
+.project-btn {
+    display: inline-block;
+    text-decoration: none; /* Removes underline */
+    background: rgb(57, 57, 124); /* Button background color */
+    color: white;
+    padding: 10px 15px; /* Adjusted padding for button size */
+    font-size: 0.9rem; /* Smaller button text */
+    border-radius: 5px; /* Smooth button corners */
+    text-align: center;
+    margin-top: 20px; /* Adds space above the button */
+    transition: background-color 0.3s ease; /* Smooth hover effects */
+}
+
+.project-btn:hover {
+    background: #140c31; /* Darker shade for hover effect */
+}
+
+/* Prevent Overlap with Contact Section */
+#projects + #contact {
+    margin-top: 60px; /* Adds space above the Contact section */
+}
+
+/* Tools Box */
+.tools-box {
+    margin-top: 20px; /* Adds space above the Tools Box */
+    margin-bottom: 20px; /* Adds space below the Tools Box */
+    background: #f4f4f4; /* Light gray background */
+    padding: 10px; /* Adds internal spacing */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px; /* Smooth corners */
+    text-align: left;
+}
+
+/* Tools Title */
+.tools-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px; /* Space below the title */
+    color: rgb(57, 57, 124); /* Matches theme color */
+}
+
+/* Tools List */
+.tools-box ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Resets padding */
+    margin: 0; /* Resets margin */
+}
+
+.tools-box ul li {
+    font-size: 0.95rem; /* Slightly smaller text for better fit */
+    color: #333; /* Default text color */
+    margin-bottom: 5px; /* Adds spacing between list items */
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(90deg, rgb(57, 57, 124), #140c31); /* Gradient background to match the header */
+    color: white; /* White text for contrast */
+    text-align: center; /* Centers the text */
+    padding: 20px 30px; /* Adds internal spacing */
+    margin-top: 40px; /* Creates space between footer and content above */
+    font-size: 1rem; /* Matches the header's text size */
+    line-height: 1.8; /* Adds space between lines for readability */
+    letter-spacing: 0.5px; /* Slight character spacing for cleaner look */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow above the footer */
+    border-top: 2px solid rgba(255, 255, 255, 0.2); /* Soft border for emphasis */
+}
+
+/* Footer Section */
+footer a {
+    color: #f4f4f4; /* Light text color for links to match theme */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes links stand out */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+footer a:hover {
+    color: #e0e0e0; /* Slightly lighter color on hover */
+    text-decoration: underline; /* Underline for hover effect */
+}
+
+/* Footer Contact Details */
+footer p {
+    margin: 5px 0; /* Adds space between lines */
+    padding: 0; /* Prevents additional padding */
+}
