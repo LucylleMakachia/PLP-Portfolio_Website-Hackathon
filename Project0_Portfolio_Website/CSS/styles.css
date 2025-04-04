@@ -5,76 +5,148 @@
     box-sizing: border-box;
 }
 
-/* Style the header */
+/* General Header Styling */
 header {
-    background: linear-gradient(90deg, rgb(57, 57, 124), #140c31); /* Gradient background for a sleek look */
-    color: #fff; /* White text color */
+    background: linear-gradient(90deg, rgb(57, 57, 124), #140c31);
+    color: white;
     display: flex;
-    justify-content: space-between; /* Align logo to the left and nav to the right */
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 30px; /* Adds space around header content */
-    position: sticky; /* Keeps the header fixed at the top during scroll */
+    padding: 15px 30px;
+    position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures the header stays above other content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the logo */
+/* Logo Styling */
 header h1 {
     margin: 0;
-    font-size: 2rem; /* Larger font for better emphasis */
+    font-size: 1.8rem;
     font-weight: bold;
     text-align: left;
-    font-family: 'Arial', sans-serif; /* Modern font choice */
-    letter-spacing: 1.5px; /* Adds spacing between letters */
+    font-family: 'Arial', sans-serif;
 }
 
-/* Style the navigation menu */
-nav ul {
-    display: flex; /* Align navigation items horizontally */
-    justify-content: center; /* Centers navigation items */
-    list-style: none; /* Removes bullet points */
-    margin: 0; /* Resets margin */
-    padding: 0; /* Removes padding */
+/* Navigation Menu - Full Screen */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style individual navigation items */
-nav ul li {
-    margin: 0 15px; /* Horizontal spacing between navigation items */
+.nav-links li {
+    margin: 0 15px;
 }
 
-/* Style navigation links */
-nav ul li a {
-    color: #fff; /* White text color for links */
+.nav-links li a {
+    color: white;
     font-weight: bold;
-    text-decoration: none; /* Removes underline from links */
-    font-size: 1rem; /* Ensures readable font size */
-    padding: 8px 15px; /* Adds padding for clickable area */
-    border-radius: 30px; /* Circular corners for links */
-    background: rgba(255, 255, 255, 0.2); /* Transparent background */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.4); /* Slightly brighter hover background effect */
-    transform: scale(1.1); /* Scales link on hover */
+.nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
 }
 
-/* Media Query: Responsive Navigation */
+/* Hide hamburger menu on larger screens */
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 820px) {
+    .nav-toggle {
+        display: block; /* Show hamburger menu button */
+        font-size: 2rem;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .nav-links {
+        display: none; /* Hide dropdown links initially */
+        position: absolute;
+        top: 100%; /* Position right below the header */
+        left: 0;
+        width: 100%;
+        background: rgba(57, 57, 124, 0.95); /* Semi-transparent background matching header */
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+    
+    .nav-links li {
+        margin: 12px 0; /* Vertical spacing between links */
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links li a {
+        background: transparent; /* Remove rectangular background */
+        border-radius: 0;
+        display: inline-block;
+        width: auto;
+        padding: 10px 20px;
+        font-size: 1.1rem; /* Slightly larger font for better touch targets */
+        transition: color 0.3s ease;
+    }
+    
+    .nav-links li a:hover {
+        background: transparent; /* No background on hover */
+        color: rgba(255, 255, 255, 0.7); /* Subtle hover effect */
+        transform: none; /* Remove scaling effect */
+    }
+}
+
+
+/* Mobile view styling */
 @media (max-width: 768px) {
-    header {
-        flex-wrap: wrap; /* Allows wrapping for smaller screens */
-        justify-content: center;
-        padding: 10px; /* Adjust padding for small screens */
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        background: rgba(57, 57, 124, 0.9); /* Semi-transparent background */
+        position: absolute; /* Position relative to header */
+        top: 60px; /* Below the header */
+        width: 100%; /* Full width */
+        padding: 15px 0;
+        z-index: 999; /* Ensure dropdown appears above other content */
     }
 
-    nav ul {
-        flex-direction: column; /* Stacks navigation items vertically */
-        align-items: center; /* Aligns items in the center */
+    .nav-links li {
+        margin: 10px 0; /* Add spacing for dropdown links */
     }
 
-    nav ul li {
-        margin: 10px 0; /* Vertical spacing for stacked items */
+    .nav-links li a {
+        color: white; /* Text color */
+        font-weight: bold;
+        text-decoration: none; /* Remove underline */
+        font-size: 1rem;
+        padding: 10px 15px; /* Adjust padding */
+        background: none; /* Remove background color */
+        border-radius: 0; /* Remove oval/rounded shape */
+        transition: color 0.3s ease; /* Optional: Add subtle hover effect */
+    }
+
+    .nav-links li a:hover {
+        color: rgba(255, 255, 255, 0.8); /* Slight color change on hover */
+        transform: none; /* Remove scale effect */
     }
 }
 
@@ -106,8 +178,6 @@ nav ul li a:hover {
 }
 
 
-/* About Section */
-/* About Section Container */
 /* About Section Container */
 #about {
     padding: 40px 20px; /* Adds space inside the section */
