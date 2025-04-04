@@ -507,89 +507,6 @@ header h1 {
     color: #333; /* Darker text for clarity */
 }
 
-
-
-/* Contact Form Container */
-.contact-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    background: #f9f9f9; /* Light background */
-}
-
-/* Contact Form */
-#contact-form {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* Contact Icon */
-.contact-icon img {
-    width: 50px; /* Adjust size of the icon */
-    margin-bottom: 10px; /* Space below the icon */
-}
-
-/* Form Heading */
-#contact-form h2 {
-    margin-bottom: 20px;
-    color: rgb(57, 57, 124); /* Matches theme color */
-}
-
-/* Input Fields */
-#contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #333;
-    text-align: left;
-}
-
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-#contact-form textarea {
-    height: 100px; /* Adjust height for textarea */
-}
-
-/* Submit Button */
-#contact-form button {
-    background: rgb(57, 57, 124); /* Button color */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#contact-form button:hover {
-    background: #140c31; /* Darker shade on hover */
-}
-
-#formFeedback {
-    margin-top: 15px;
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-
 /* Projects Section */
 #projects {
     padding: 60px 20px; /* Increased padding at the top for spacing */
@@ -713,6 +630,87 @@ header h1 {
     color: #333; /* Default text color */
     margin-bottom: 5px; /* Adds spacing between list items */
 }
+
+/* Contact Form Container */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: #f9f9f9; /* Light background */
+}
+
+/* Contact Form */
+#contact-form {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Contact Icon */
+.contact-icon img {
+    width: 50px; /* Adjust size of the icon */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Form Heading */
+#contact-form h2 {
+    margin-bottom: 20px;
+    color: rgb(57, 57, 124); /* Matches theme color */
+}
+
+/* Input Fields */
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    height: 100px; /* Adjust height for textarea */
+}
+
+/* Submit Button */
+#contact-form button {
+    background: rgb(57, 57, 124); /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #140c31; /* Darker shade on hover */
+}
+
+#formFeedback {
+    margin-top: 15px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 
 /* Footer Styling */
 footer {
