@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll("nav ul li a");
@@ -63,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
     
 // Highlight current navigation link
     const sections = document.querySelectorAll("section");
@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
 
 // Typing effect for "Hi, I'm Lucylle Makachia"
 const mainText = "Hi, I'm Lucylle Makachia";
@@ -117,4 +118,3 @@ function typeSubText() {
 
 // Start the typing effect
 typeMainText();
-

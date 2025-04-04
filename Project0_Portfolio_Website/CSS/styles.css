@@ -107,69 +107,70 @@ nav ul li a:hover {
 
 
 /* About Section */
+/* About Section Container */
+/* About Section Container */
 #about {
-    display: flex; /* Align icon, text, and image horizontally */
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    gap: 20px; /* Space between items */
-    padding: 40px 20px; /* Adds spacing */
+    padding: 40px 20px; /* Adds space inside the section */
     background: #f4f4f4; /* Light background for contrast */
-    color: #333; /* Text color */
+    display: flex;
+    justify-content: center; /* Centers the content */
+    align-items: center; /* Aligns vertically */
 }
 
-/* About Icon Styling */
-.about-icon img {
-    width: 50px; /* Adjust the size of the icon */
-    margin-right: 10px; /* Adds spacing between the icon and text */
-}
-
-/* About Content Styling */
+/* About Content in Rectangular Box */
 .about-content {
-    display: flex;
-    align-items: center; /* Centers icon, text, and image vertically */
-    justify-content: space-between; /* Aligns content within the section */
-    flex: 1; /* Ensures content takes equal space */
+    background: white; /* White background for the box */
+    border: none; /* Removes the border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+    padding: 30px; /* Internal spacing */
+    width: 80%; /* Takes up 80% of the container */
+    max-width: 800px; /* Limits maximum width for large screens */
 }
 
+/* About Text */
 .about-text {
-    flex: 2; /* About text takes more space */
-    text-align: left;
+    text-align: center; /* Centers text */
 }
 
-.about-image {
-    flex: 1; /* Image takes less space */
-    display: flex;
-    justify-content: center;
+.about-text h2 {
+    font-size: 2rem; /* Larger font for emphasis */
+    color: rgb(57, 57, 124); /* Matches theme color */
+    margin-bottom: 20px; /* Space below heading */
 }
 
-.about-image img {
-    width: 100%; /* Makes image responsive */
-    max-width: 300px; /* Caps image width */
-    border-radius: 10px; /* Adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+.about-text p {
+    font-size: 1rem; /* Standard text size */
+    color: #666; /* Softer text color */
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 20px; /* Adds space between paragraphs */
 }
 
-/* About Buttons */
+/* Buttons */
 .about-buttons {
-    margin-top: 20px; /* Space above the buttons */
     display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
-    gap: 15px; /* Space between the buttons */
+    justify-content: center; /* Centers the buttons */
+    gap: 15px; /* Space between buttons */
 }
 
-/* LinkedIn and GitHub Buttons */
 .about-buttons .btn {
-    display: inline-block;
     text-decoration: none; /* Removes underline */
-    background: rgb(57, 57, 124); /* Button color */
-    color: white;
-    padding: 10px 15px; /* Button size */
+    color: white; /* White text */
+    background: rgb(57, 57, 124); /* Button background color */
+    padding: 10px 20px; /* Adds spacing inside buttons */
     border-radius: 5px; /* Rounded corners */
-    font-size: 0.9rem;
     transition: background-color 0.3s ease;
 }
 
 .about-buttons .btn:hover {
-    background: #140c31; /* Darker color on hover */
+    background: #140c31; /* Darker shade on hover */
+}
+
+/* Icon Styling */
+.about-icon img {
+    display: block; /* Ensures the icon is centered */
+    width: 80px; /* Adjusts icon size */
+    margin: 0 auto 20px auto; /* Centers icon and adds space below */
 }
 
 
