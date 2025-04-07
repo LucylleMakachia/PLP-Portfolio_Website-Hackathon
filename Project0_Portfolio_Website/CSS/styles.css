@@ -227,10 +227,10 @@ header h1 {
 }
 
 .about-text p {
-    font-size: 1rem; /* Standard text size */
-    color: #666; /* Softer text color */
-    line-height: 1.6; /* Improves readability */
-    margin-bottom: 20px; /* Adds space between paragraphs */
+    font-size: 1rem; 
+    color: #333; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
 }
 
 /* Buttons */
@@ -505,7 +505,7 @@ header h1 {
 /* Skills Description */
 .skills-box p {
     font-size: 1rem;
-    color: #666; /* Softer text color */
+    color: #333; /* Softer text color */
     margin-bottom: 10px; /* Adds space below each skill description */
     line-height: 1.5; /* Improves readability */
 }
@@ -613,7 +613,7 @@ header h1 {
 /* Project Description */
 .project-box p {
     font-size: 0.95rem; /* Adjusted size for readability */
-    color: #666; /* Softer text color */
+    color: #333; /* Softer text color */
     margin-bottom: 15px; /* Adds spacing below the description */
     line-height: 1.5; /* Improves text readability */
     text-align: left; /* Aligns text inside the box */
